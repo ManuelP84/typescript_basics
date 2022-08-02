@@ -79,17 +79,6 @@ var Person = /** @class */ (function () {
     return Person;
 }());
 var newPerson = new Person(1, "manuel");
-// Class that implements an interface
-var Session = /** @class */ (function () {
-    function Session(id, name) {
-        this.id = id;
-        this.name = name;
-    }
-    Session.prototype.register = function () {
-        return "".concat(this.name, " has now a session!");
-    };
-    return Session;
-}());
 // Subclasses
 var Employee = /** @class */ (function (_super) {
     __extends(Employee, _super);
@@ -103,6 +92,17 @@ var Employee = /** @class */ (function (_super) {
 var employee = new Employee(1, "manuel", "developer");
 console.log(employee.position);
 employee.register();
+// Class that implements an interface
+var Session = /** @class */ (function () {
+    function Session(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    Session.prototype.register = function () {
+        return "".concat(this.name, " has now a session!");
+    };
+    return Session;
+}());
 // Generics
 var getArray = function (items) {
     return new Array().concat(items);
