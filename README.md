@@ -1,5 +1,5 @@
 # Typescript basics
-#### Basic use of typescript
+
 
 ### Basic types
 ![Image text](https://github.com/ManuelP84/typescript_basics/blob/main/pics/basicTypes.PNG)
